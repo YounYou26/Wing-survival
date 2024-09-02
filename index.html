@@ -19,7 +19,7 @@
     
         <div>
             <nav>
-                <ul>
+                <ul class="header">
                     <li class="arrange">HOME</li>
                     <li class="arrange">OUR TEAM</li>
                     <li class="arrange">PROJECTS</li>
@@ -27,8 +27,15 @@
                 </ul>
                 <style>
                     li.arrange{
-                        display: inline-block;
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
                         margin-left: 50px;
+                    }
+
+                    ul.header{
+                        display: flex;
+                        flex: row;
                     }
                 </style>
               
@@ -43,11 +50,13 @@
             <style>
                 div{
                     display: flex;
+                    justify-content: space-between;
+
                 }
 
                 form{
-                    margin-left: 200px;
                     display: flex;
+                    justify-content: flex-end;
                     align-items: center;
                     width: 60px;
                 }
@@ -60,7 +69,7 @@
         div{
                 width: 1000px;
                 height: 50px;
-                float: none;
+
                 margin: 50px;
                 margin-bottom: 20px;
                 padding: 50px;
@@ -81,7 +90,10 @@
             <h2 class="center-title">Article heading</h2>
             <style>
                 h2.center-title {
-                text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                /* text-align: center; */
                 }
             </style>
             
@@ -140,8 +152,11 @@
             }
 
             h2{
-                text-align: center;
-            }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* text-align: center; */
+                }
 
         </style>        
 
